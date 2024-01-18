@@ -102,8 +102,8 @@ p{
     height: 45%;
 }
 .why-choose-us-img img{
-    width:50%;
-    height: 50%;
+    width: 7rem;
+    height: 7rem;
 }
 .Why-choose-us-title{
     font-size: 2.4rem;
@@ -113,3 +113,24 @@ p{
     font-size: 1.8rem;
     line-height: 1.7;
 }
+.why-choose-us-text-container{
+    background-color: var(--nav-bgcolor);
+    border-radius: 36px;
+    
+   
+}
+.section-why-card{
+    
+    background-color: var(--nav-bgcolor);
+    border-radius: 36px;
+    height: 100%;
+}
+#high-quality{
+    margin-bottom: 6rem;
+}
+#hands-on{
+    margin-bottom: 7rem;
+}
+/* #affordable{
+    margin-bottom: rem;
+} */
