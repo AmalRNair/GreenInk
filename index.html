@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!--EXTERNAL LINK FOR OWL COROUSEL -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
@@ -32,6 +40,9 @@
             <li class="nav-item px-2">
               <a class="nav-link" href="#">Why Choose Us</a>
             </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#">Our Courses</a>
+            </li>
             <li class="nav-item px-3">
               <a class="nav-link cta px-4" href="#">Contact</a>
             </li>
@@ -46,11 +57,17 @@
         <div class="row">
           <div class="col-12 col-lg-6 mt-4">
             <h1 class="text-dark fw-bold" id="titleline">BUILDING YOU FOR THE DIGITAL AGE</h1>
-            <p class="text-dark pt-5 ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to make a type specimen book. 
+            <p class="text-dark pt-5 ">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
-            <button class="btn">Whatsapp</button>
-            <button class="btn">Call:1234567891</button>
+            <a href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
+              target="_blank">
+              <button class="btn">Whatsapp</button>
+            </a>
+            <a href="tel:+919747976278">
+              <button class="btn">Call:+919747976278</button>
+            </a>
+
           </div>
           <div class="col-12 col-lg-6" id="animation-container">
             <div class="d-flex justify-content-end">
@@ -61,7 +78,7 @@
                   render: 'svg',
                   loop: true,
                   autoplay: true,
-                  name:'learning'
+                  name: 'learning'
                 })
               </script>
             </div>
@@ -74,15 +91,15 @@
   <main>
     <section class="Our-Process">
       <div class="container">
-        <h1 class="text-dark fw-bold text-center py-5" id="process">OUR PROCESS</h1>
+        <h1 class="text-dark display-3 fw-bold text-center py-5" id="process">OUR PROCESS</h1>
       </div>
       <div class="container">
         <div class="row g-5">
           <div class="col-12 col-lg-3">
-            <div class="card border-0 text-center p-4">
+            <div class="card1 border-0 text-center p-4">
               <center>
                 <br>
-                <img src="./assets/idea-exchange (1).png" class="card-img-top p-4 mt-4" >
+                <img src="./assets/idea-exchange (1).png" class="card-img-top1 p-4 mt-4">
                 <div class="card-body">
                   <p class="card-text mb-3">Understanding & Creating a Customised Training Plan for each student</p>
                 </div>
@@ -90,10 +107,10 @@
             </div>
           </div>
           <div class="col-12 col-lg-3">
-            <div class="card border-0 text-center p-4">
+            <div class="card1 border-0 text-center p-4">
               <center>
                 <br>
-                <img src="./assets/working.png" class="card-img-top p-3 mt-4 mb-3" >
+                <img src="./assets/working.png" class="card-img-top1 p-3 mt-4 mb-3">
                 <div class="card-body">
                   <p class="card-text mb-4">Enabling the student for the Industry</p>
                 </div>
@@ -101,10 +118,10 @@
             </div>
           </div>
           <div class="col-12 col-lg-3">
-            <div class="card border-0 text-center p-4">
+            <div class="card1 border-0 text-center p-4">
               <center>
                 <br>
-                <img src="./assets/businessman.png" class="card-img-top p-3 mt-4 mb-3" >
+                <img src="./assets/businessman.png" class="card-img-top1 p-3 mt-4 mb-3">
                 <div class="card-body">
                   <p class="card-text mb-4">Transforming the Student as a Professional</p>
                 </div>
@@ -112,10 +129,10 @@
             </div>
           </div>
           <div class="col-12 col-lg-3">
-            <div class="card border-0 text-center p-4">
+            <div class="card1 border-0 text-center p-4">
               <center>
                 <br>
-                <img src="./assets/motivation (2).png" class="card-img-top p-2 mt-4 mb-4" >
+                <img src="./assets/motivation (2).png" class="card-img-top1 p-2 mt-4 mb-4">
                 <div class="card-body border-0">
                   <p class="card-text mb-4">Accelerating the Skill</p>
                 </div>
@@ -127,56 +144,123 @@
     </section>
     <section class="Why-choose-us">
       <div class="container">
-        <h1 class="text-dark fw-bold text-center mt-4 pt-5 pb-4">WHY CHOOSE US</h1>
+        <h1 class="text-dark display-3 fw-bold text-center mt-4 pt-5 pb-4">WHY CHOOSE US</h1>
         <div class="container py-5">
           <div class="row g-5">
             <div class="col-12 col-lg-6">
               <div class="d-flex section-why-card ">
                 <div class="why-choose-us-img">
-                  <img class="m-5" src="./assets/degree.png" >
+                  <img src="./assets/degree.png">
                 </div>
                 <div class="p-3 d-flex why-choose-us-text-container flex-column">
                   <h3 class="fw-bold text-dark Why-choose-us-title mt-3">High Quality Syllabus</h3>
-                  <p class="why-choose-us-text" id="high-quality">The Syllabus is comprehensively designed, keeping the industry standards under the watchful eye of industry experts.</p>
+                  <p class="why-choose-us-text" id="high-quality">The Syllabus is comprehensively designed, keeping the
+                    industry standards under the watchful eye of industry experts.</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="d-flex section-why-card ">
                 <div class="why-choose-us-img">
-                  <img class="m-5" src="./assets/presentation.png" >
+                  <img src="./assets/presentation.png">
                 </div>
                 <div class="p-3 why-choose-us-text-container  flex-column">
                   <h3 class="fw-bold text-dark Why-choose-us-title mt-3">Hands On Training</h3>
-                  <p class="why-choose-us-text" id="hands-on">Our expert trainers provide the students with hands-on live projects under their supervision to give them disclosure of performing different jobs in the industry.</p>
+                  <p class="why-choose-us-text" id="hands-on">Our expert trainers provide the students with hands-on
+                    live projects under their supervision to give them disclosure of performing different jobs in the
+                    industry.</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="d-flex section-why-card ">
                 <div class="why-choose-us-img">
-                  <img class="m-5" src="./assets/low-cost.png">
+                  <img src="./assets/low-cost.png">
                 </div>
                 <div class="p-3 d-flex why-choose-us-text-container  flex-column">
                   <h3 class="fw-bold text-dark Why-choose-us-title mt-3">Affordable Fee </h3>
-                  <p class="why-choose-us-text" id="affordable">The courses are designed with a reasonable fee structure to ensure that all fresh talents get an opportunity to gain practical exposure and exercise their skills in the best way possible in the industry.</p>
+                  <p class="why-choose-us-text" id="affordable">The courses are designed with a reasonable fee structure
+                    to ensure that all fresh talents get an opportunity to gain practical exposure and exercise their
+                    skills in the best way possible in the industry.</p>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="d-flex section-why-card ">
-                <div class="why-choose-us-img">
-                  <img class="m-5 " src="./assets/award.png" >
+                <div class="why-choose-us-img ">
+                  <img src="./assets/award.png">
                 </div>
                 <div class="p-3 d-flex why-choose-us-text-container  flex-column ">
                   <h3 class="fw-bold text-dark Why-choose-us-title mt-3">Backed By Industry Experts</h3>
-                  <p class="why-choose-us-text">The Company was instituted by some prominent IT industry experts. Each of the training courses is designed under the supervision of these experts to ensure the complete conversion of a fresher into a full-fledged IT Professional.</p>
+                  <p class="why-choose-us-text">The Company was instituted by some prominent IT industry experts. Each
+                    of the training courses is designed under the supervision of these experts to ensure the complete
+                    conversion of a fresher into a full-fledged IT Professional.</p>
                 </div>
               </div>
-            </div>  
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="courses">
+      <div class="container">
+        <h1 class=" display-3 text-center fw-bold" id="courses"><span class="text-success">OUR</span> COURSES</h1>
+        <div class="row">
+          <div class="owl-carousel owl-theme">
+            <div class="card2">
+              <div class="card-body2 ">
+                <h1 class="text-center fw-bold pt-4" id="courseTitle">DevOps</h1>
+                <hr />
+                <img src="./assets/pngkey.com-black-ops-3-png-7367848.png" class="card-img-top2 " id="devopsimg">
+                <p class="p-4" id="devopsp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-body2 ">
+                <h1 class="text-center fw-bold pt-4" id="courseTitle">Networking</h1>
+                <hr />
+                <img src="./assets/kindpng_334663.png" class="card-img-top2 " id="networkingimg" >
+                <p class="p-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-body2 ">
+                <h1 class="text-center fw-bold pt-4" id="courseTitle">Operating System</h1>
+                <hr />
+                <img src="./assets/linux.png" class="card-img-top2 " >
+                <p class="p-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-body2 ">
+                <h1 class="text-center fw-bold pt-4" id="courseTitle">Python</h1>
+                <hr />
+                <img src="./assets/python_logo_icon_168886.png" class="card-img-top2 " id="pythonimg">
+                <p class="p-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer</p>
+              </div>
+            </div>
+            <div class="card2">
+              <div class="card-body2 ">
+                <h1 class="text-center fw-bold pt-4" id="courseTitle">MERN Full Stack</h1>
+                <hr />
+                <img src="./assets/mern.png" class="card-img-top2" id="mernimg" >
+                <p class="p-4" id="mernp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="contact">
+      <hr>
+      <h1>contact</h1>
     </section>
   </main>
 
@@ -201,6 +285,41 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
+
+  <!--JQUERY CDN LINK-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--JAVASCRIPT CDN LINKS FOR OWL CAROUSEL-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:25,
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          800:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:4,
+              nav:false,
+              loop:true
+          }
+      }
+    })
+  </script>
 </body>
 
 </html>
