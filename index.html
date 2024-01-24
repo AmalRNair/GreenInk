@@ -22,36 +22,46 @@
 <body>
   <!-- navigationbar -->
   <header class="bg-header">
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg  bg-transparent ">
       <div class="container">
         <a class="navbar-brand fw-bold" href="#">GreenInk</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item px-2">
-              <a class="nav-link" aria-current="page" href="#hero-section">Home</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#Our-Process">Our Process</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#Why-choose-us">Why Choose Us</a>
-            </li>
-            <li class="nav-item px-2">
-              <a class="nav-link" href="#courses">Our Courses</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link cta px-4" href="#contact">Contact</a>
-            </li>
 
-          </ul>
+        <!--sidebar-->
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel" style="width: 60%;">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-2">
+                <a class="nav-link" aria-current="page" href="#hero-section">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#Our-Process">Our Process</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#Why-choose-us">Why Choose Us</a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link" href="#courses">Our Courses</a>
+              </li>
+              <li class="nav-item px-3">
+                <a class="nav-link cta px-4" href="#contact" >Contact</a>
+              </li>
 
+            </ul>
+
+          </div>
         </div>
       </div>
     </nav>
+    
     <section id="hero-section">
       <div class="container">
         <div class="row">
@@ -62,7 +72,7 @@
             </p>
             <a href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
               target="_blank">
-              <button class="btn" >Whatsapp</button>
+              <button class="btn">Whatsapp</button>
             </a>
             <a href="tel:+919747976278">
               <button class="btn">Call:+919747976278</button>
@@ -212,7 +222,8 @@
                 <h1 class="text-center fw-bold pt-4" id="courseTitle">DevOps</h1>
                 <hr />
                 <img src="./assets/pngkey.com-black-ops-3-png-7367848.png" class="card-img-top2 " id="devopsimg">
-                <p class="p-4" id="devopsp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                <p class="p-4" id="devopsp">Lorem Ipsum has been the industry's standard dummy text ever since the
+                  1500s,
                   when an unknown printer</p>
               </div>
             </div>
@@ -220,7 +231,7 @@
               <div class="card-body2 ">
                 <h1 class="text-center fw-bold pt-4" id="courseTitle">Networking</h1>
                 <hr />
-                <img src="./assets/kindpng_334663.png" class="card-img-top2 " id="networkingimg" >
+                <img src="./assets/kindpng_334663.png" class="card-img-top2 " id="networkingimg">
                 <p class="p-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                   when an unknown printer</p>
               </div>
@@ -229,7 +240,7 @@
               <div class="card-body2 ">
                 <h1 class="text-center fw-bold pt-4" id="courseTitle">Operating System</h1>
                 <hr />
-                <img src="./assets/linux.png" class="card-img-top2 " >
+                <img src="./assets/linux.png" class="card-img-top2 ">
                 <p class="p-4">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                   when an unknown printer</p>
               </div>
@@ -247,12 +258,12 @@
               <div class="card-body2 ">
                 <h1 class="text-center fw-bold pt-4" id="courseTitle">MERN Full Stack</h1>
                 <hr />
-                <img src="./assets/mern.png" class="card-img-top2" id="mernimg" >
+                <img src="./assets/mern.png" class="card-img-top2" id="mernimg">
                 <p class="p-4" id="mernp">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                   when an unknown printer</p>
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -262,12 +273,12 @@
       <div class="container py-5">
         <div class="row">
           <div class="col-12  col-lg-4 mb-4">
-            <h3 class="fw-bold pb-3" >Visit us</h3>
+            <h3 class="fw-bold pb-3">Visit us</h3>
             <p>location,<br>state,<br>country</p>
             <a href="mailto:info@greenink.com" class="text-dark">info@greenink.com</a>
           </div>
           <div class="col-12  col-lg-4 mb-4">
-            <h3 class="fw-bold pb-3" >Our Links</h3>
+            <h3 class="fw-bold pb-3">Our Links</h3>
             <div class="d-flex flex-column">
               <a href="#hero-section" class="text-dark">Home</a>
               <a href="#Our-Process" class="text-dark">Our Process</a>
@@ -277,19 +288,16 @@
           </div>
           <div class="col-12  col-lg-4">
             <h3 class="fw-bold pb-3">Connect us On</h3>
-              <img src="./assets/youtube.png" class="footerimg">
-              <img src="./assets/linkedin.png" class="footerimg">
-              <img src="./assets/instagram.png" class="footerimg">
-              <img src="./assets/facebook.png" class="footerimg">
-            </div>
+            <img src="./assets/youtube.png" class="footerimg">
+            <img src="./assets/linkedin.png" class="footerimg">
+            <img src="./assets/instagram.png" class="footerimg">
+            <img src="./assets/facebook.png" class="footerimg">
           </div>
         </div>
       </div>
+      </div>
     </footer>
   </main>
-
-
-
 
 
 
@@ -320,28 +328,28 @@
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     $('.owl-carousel').owlCarousel({
-      autoplay:true,
-      loop:true,
-      margin:25,
-      responsiveClass:true,
-      responsive:{
-          0:{
-              items:1,
-              nav:true
-          },
-          600:{
-              items:2,
-              nav:false
-          },
-          800:{
-              items:3,
-              nav:false
-          },
-          1000:{
-              items:4,
-              nav:false,
-              loop:true
-          }
+      autoplay: true,
+      loop: true,
+      margin: 25,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 2,
+          nav: false
+        },
+        800: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 4,
+          nav: false,
+          loop: true
+        }
       }
     })
   </script>

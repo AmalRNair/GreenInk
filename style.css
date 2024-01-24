@@ -12,7 +12,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 html{
      font-size: 62.5%; /*1rem will be 10px */
@@ -22,6 +22,7 @@ body{
     font-size: 1.8rem;
     color: #333;
     line-height: 1.6;
+    padding-right: 0px;
 }
 ul{
     list-style: none;
@@ -44,7 +45,9 @@ nav{
 #navbarSupportedContent{
     margin-top: 3.5rem;
 }
-
+.sidebar{
+    background-color: var(--nav-bgcolor);
+}
 .nav-link:link , .nav:visited{
   /* color:#FFF; */
   font-size: 1.8rem;
@@ -54,6 +57,7 @@ nav{
 .nav-link:hover , .nav-link:active{
     color: #fff;
 }
+
 .nav-link.cta{
     background-color: #ddaf16fe;
     border-radius: 4px;
