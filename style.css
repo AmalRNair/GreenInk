@@ -23,6 +23,7 @@ body{
     color: #333;
     line-height: 1.6;
     padding-right: 0px;
+    
 }
 ul{
     list-style: none;
@@ -177,34 +178,30 @@ p{
 .card-body2 img{
     width: 50%;
     height: 50%;
-    padding: 6rem;
+    padding: 5rem;
     margin-top: -3rem;
 }
 .card-body2 p{
     font-size: 1.5rem;
     margin-top: -4rem;
+    margin-top: -2rem;
+    /* font-weight: bold; */
+    margin-bottom: -4rem;
 }
-#networkingimg{
-    width: 100%;
-    padding: 4rem;
-    margin-top: 1rem;
-  
+#os1 {
+    
 }
 #devopsimg{
-    width: 100%;
-    padding: 2rem;
-    margin-top: 4rem;
+    
 }
 #devopsp{
-    margin-top: 3rem;
+    
 }
 #mernimg{
-    width: 100%;
-    padding: 4rem;
-    margin-top: 4.5rem;
+    padding: 7rem;
 }
 #mernp{
-    margin-top: 2rem;
+    
 }
 #contact{
     background-color: #fbd147fd;
@@ -217,4 +214,49 @@ h3{
     width: 10%;
     height: auto;
     margin-left: 1rem;
+}
+.card2:hover{
+    transform: translateY(20px);
+}
+.card2:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    Left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,176,155,0.5), rgba(150, 201, 61,1));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+.card2:hover:before{
+    opacity: 1;
+}
+.card2 .info{
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+.card2:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+}
+.card2 .info .btn{
+    text-decoration: none;
+    /* padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold; */
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    margin-top: -9rem;
+   
+}
+.card2 .info .btn:hover{
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 }
