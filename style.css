@@ -260,3 +260,9 @@ h3{
 .card2 .info .btn:hover{
     box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
 }
+.team .card{
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+.team .card-body i{
+	font-size: 20px;
+}
