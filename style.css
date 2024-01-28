@@ -188,20 +188,8 @@ p{
     /* font-weight: bold; */
     margin-bottom: -4rem;
 }
-#os1 {
-    
-}
-#devopsimg{
-    
-}
-#devopsp{
-    
-}
 #mernimg{
     padding: 7rem;
-}
-#mernp{
-    
 }
 #contact{
     background-color: #fbd147fd;
@@ -266,3 +254,22 @@ h3{
 .team .card-body i{
 	font-size: 20px;
 }
+
+/* courseinner */
+
+.courseinner img{
+    width: 60%;
+    margin-top: 2.5rem;
+}
+
+#hr1{
+    border-top: 2px dashed;
+    opacity: 1.25;
+    margin-top: 3rem;
+}
+.accordion-button{
+    font-size: 2rem;
+}
+/* .tutorcard{
+    width: 75%;
+} */
