@@ -40,6 +40,7 @@ nav{
 }
 .navbar{
     transition: all 0.1s;
+    height: auto;
 }
 .navbar-scrolled{
     background-color: rgba(240, 198,60,.95);
@@ -207,8 +208,28 @@ p{
     background-color: #fbd147fd;
     
 }
+.callback-strip{
+    background-color: rgb(255, 255, 255,0.70);
+    /* height: 10%; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+.callback-strip p{
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 0.15rem;
+    
+}
+
 h3{
     font-size: 2.4rem;
+}
+.socials{
+    cursor: pointer;
 }
 .footerimg{
     width: 10%;
@@ -267,7 +288,7 @@ h3{
 	font-size: 20px;
 }
 
-/* courseinner */
+/* DEVOPS PAGE */
 
 .courseinner img{
     width: 60%;
@@ -285,3 +306,48 @@ h3{
 /* .tutorcard{
     width: 75%;
 } */
+
+/* DEVOPS PAGE */
+
+
+
+/* ABOUT US PAGE */
+.abnavbar{
+   
+}
+.masthead{
+    background-image: url('./assets/aboutus.jpg');
+    background-size: cover;
+    min-height: 60vh;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.color-overlay{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px){
+    .masthead{
+        min-height: 30vh;
+    }   
+    #about-us-title{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+@media (min-width: 768px){
+    #about-us-title{
+        font-size: 4rem;
+    }
+}
+@media (max-width: 768px){
+    #logo{
+        font-size: calc(1.525rem + 3.3vw);
+    }
+}
+
+
+/* ABOUT US PAGE */
