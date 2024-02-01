@@ -25,6 +25,30 @@ body{
     padding-right: 0px;
     
 }
+/* floating whatsapp icon  */
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+
+  .my-float {
+    margin-top: 16px;
+  }
+
+
+
+/* floating whatsapp icon  */
+
 ul{
     list-style: none;
 }
@@ -78,6 +102,14 @@ nav{
 .nav-link.cta:hover{
     background-color: #a88924e6;
     color: #fff;
+}
+#selectcourse{
+    font-size: 1.8rem;
+    background-color: #f0c63c;
+    border: 0;
+    font-weight: 200;
+    margin-top: 0.8rem;
+    margin-right: 0rem;
 }
 #titleline{
     line-height: 1.2;
@@ -287,6 +319,25 @@ h3{
 .team .card-body i{
 	font-size: 20px;
 }
+/* testimonial */
+#testimonials{
+    padding: 5rem 0;
+    background-color: #f0c63c;
+
+}
+.testimonial-name , .testimonial-text{
+    color:rgb(74 66 38 / 99%);
+}
+.testimonial-text{
+    margin-top: -1000rem;
+}
+/* .testimonial-card{
+    width: 50%;
+} */
+
+/* testimonial */
+
+
 
 /* DEVOPS PAGE */
 
