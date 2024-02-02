@@ -24,7 +24,7 @@
     <!--FLOATING WHATSAPP-->
     <!-- navigationbar start-->
     <header class="bg-header">
-        <nav class="navbar navbar-expand-lg  fixed-top">
+        <nav class="navbar1 navbar-expand-lg  fixed-top">
             <div class="container ">
                 <a class="navbar-brand fw-bold" id="logo" href="index.html">GreenInk</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -40,18 +40,18 @@
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav ms-auto mb-lg-0" style="margin-top: -5rem;">
                             <li class="nav-item px-2">
                                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item px-2">
-                                <a class="nav-link" href="#Our-Process">Our Process</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="#Why-choose-us">Why Choose Us</a>
-                            </li>
-                            <li class="nav-item px-2">
-                                <a class="nav-link" href="#courses">Courses</a>
+                                <select id="selectcourse" onchange="location=this.value">
+                                    <option value="">Courses</option>
+                                    <option value="devops.html">Devops</option>
+                                    <option value="devops.html">Mern</option>
+                                    <option value="devops.html">Networking</option>
+                                    <option value="devops.html">OS</option>
+                                  </select>
                             </li>
                             <li class="nav-item px-3">
                                 <a class="nav-link cta px-4" href="#contact">Contact</a>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-
+    
         <!--hero-section starts-->
         <main id="about-us-page">
             <div class="text-center">
@@ -82,11 +82,17 @@
                 </h2>
             </div>
             <!-- founder starts -->
-            <section id="about" class="about_wrapper">
+            <section id="founders" class="about_wrapper">
                 <div class="container">
                     <div class="row flex-lg-row flex-column-reverse ">
                         <div class="courseinner col-lg-6 mb-4 mb-lg-0 ps-lg-4 text-center ">
-                            <img src="assets/team-1.jpg" alt="">
+                            <img src="assets/team-1.jpg" alt="" style="width: 50%;">
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                              </p>
                         </div>
                         <div class="col-lg-6  text-lg-start">
                             <h2 class="mt-4 fw-bold display-3">FOUNDERS</h2>
@@ -108,6 +114,90 @@
             <!-- founder ends -->
         </main>
         <!--hero-section ends-->
+    </header>
+        <!--ADVISORS SECTION start-->
+        <section id="Advisors">
+            <div class="container">
+              <h1 class="text-dark display-3 fw-bold text-center py-5" id="process">ADVISORS</h1>
+            </div>
+            <div class="container">
+              <div class="row g-5">
+                <div class="col-12 col-md-4 col-lg-2">
+                  <div class="card3 border-0 text-center" style="background-color:#9d8745 ;">
+                    <center>
+                      <br>
+                      <img src="./assets/team-1.jpg" style="width: 50%;" class="rounded-circle">
+                      <div class="card-body">
+                        <p class="card-text ">MOC</p>
+                        <p class="">(current status)</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                  <div class="card3 border-0 text-center" style="background-color:#9d8745 ;">
+                    <center>
+                      <br>
+                      <img src="./assets/team-2.jpg" style="width: 50%;" class="rounded-circle">
+                      <div class="card-body">
+                        <p class="card-text ">MLA</p>
+                        <p class="">(current status)</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                  <div class="card3 border-0 text-center " style="background-color:#9d8745 ;">
+                    <center>
+                      <br>
+                      <img src="./assets/team-3.jpg" style="width: 50%;" class="rounded-circle">
+                      <div class="card-body">
+                        <p class="card-text">MIZONE</p>
+                        <p class="">(current status)</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                  <div class="card3 border-0 text-center " style="background-color:#9d8745 ;">
+                    <center>
+                      <br>
+                      <img src="./assets/team-4.jpg" style="width: 50%;" class="rounded-circle">
+                      <div class="card-body border-0">
+                        <p class="card-text ">STARTUP MISSION</p>
+                        <p class="">(current status)</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card3 border-0 text-center" style="background-color:#9d8745 ;">
+                      <center>
+                        <br>
+                        <img src="./assets/team-4.jpg" style="width: 50%;" class=" rounded-circle">
+                        <div class="card-body border-0">
+                          <p class="card-text">JHON</p>
+                          <p class="">(current status)</p>
+                        </div>
+                      </center>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-2">
+                    <div class="card3 border-0 text-center " style="background-color:#9d8745 ;color: #fff;">
+                      <center>
+                        <br>
+                        <img src="./assets/team-4.jpg" style="width: 50%;" class=" rounded-circle">
+                        <div class="card-body border-0">
+                          <p class="card-text ">RAVI</p>
+                          <p class="">(current status)</p>
+                        </div>
+                      </center>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <!--ADVISORS SECTION start-->
         <!--contact starts-->
         <footer id="contact">
             <div class="container py-3 mt-3">
@@ -164,9 +254,9 @@
                 if (window.scrollY >= 40) {
                     navEl.classList.add('navbar-scrolled');
                 }
-                else if (window.scrollY < 40) {
-                    navEl.classList.remove('navbar-scrolled');
-                }
+                // else if (window.scrollY < 40) {
+                //     navEl.classList.remove('navbar-scrolled');
+                // }
             });
         </script>
 
