@@ -246,10 +246,12 @@ p {
 #bootcamp2 img {
     width: 100%;
 }
-.bootcamp{
+
+.bootcamp {
     height: 97%;
     width: 99%;
 }
+
 .bootcamp-body {
     height: 100%;
     width: 100%;
@@ -654,24 +656,28 @@ h3 {
 /* .accordion-button:not(.collapsed){
     background-color: rgba(93, 120, 228, 0.05);
 } */
-.accordion-header1{
+.accordion-header1 {
     background-color: hsla(56, 75%, 54%, 0.373);
     height: 30%;
 }
-.accordion-text-container{
+
+.accordion-text-container {
     display: flex;
     box-sizing: border-box;
 }
-.accordion-body1{
+
+.accordion-body1 {
     padding-left: 4rem;
 
 }
-.accordion-body1 li{
+
+.accordion-body1 li {
     font-size: 16px;
     list-style-type: circle;
     color: #000000;
 }
-.first{
+
+.first {
     background-color: hsla(56, 77%, 53%, 0.373);
     width: 15%;
     height: auto;
@@ -680,18 +686,190 @@ h3 {
     align-items: center;
 
 }
-.second{
+
+.second {
     padding: 2rem;
     align-items: center;
 }
-li {
-    
-    
- }
-.accordion-text-container:hover .first{
+
+li {}
+
+.accordion-text-container:hover .first {
     background-color: #f0c63c;
 }
-/* SYLLABUS endss */
+
+/* SYLLABUS ends */
+
+/* FAQ starts */
+#faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+    /* background: #fbd147fd; */
+    padding: 40px;
+}
+
+::selection {
+    background: #ddaf16fe;
+    color: #fff;
+}
+
+.accordion {
+    margin-top: 4rem;
+    display: flex;
+    max-width: 1010px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 25px;
+    padding: 45px 90px 45px 60px;
+}
+
+.accordion .image-box {
+    height: 360px;
+    width: 300px;
+}
+
+.accordion .image-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.accordion .accordion-text {
+    width: 60%;
+}
+
+.accordion .accordion-text .title {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ddaf16fe;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.accordion .accordion-text .faq-text {
+    margin-top: 25px;
+    height: 263px;
+    overflow-y: auto;
+}
+
+.faq-text::-webkit-scrollbar {
+    display: none;
+}
+
+.accordion .accordion-text li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.accordion-text li .question-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion-text li .question-arrow .question {
+    font-size: 18px;
+    font-weight: 500;
+    color: #595959;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li .question-arrow .arrow {
+    font-size: 20px;
+    color: #595959;
+    transition: all 0.3s ease;
+}
+
+.accordion-text li.showAnswer .question-arrow .arrow {
+    transform: rotate(-180deg);
+}
+
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow {
+    color: #ddaf16fe;
+}
+
+.accordion-text li.showAnswer .question-arrow .question,
+.accordion-text li.showAnswer .question-arrow .arrow {
+    color: #ddaf16fe;
+}
+
+.accordion-text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 10px 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion-text li p {
+    width: 92%;
+    font-size: 15px;
+    font-weight: 500;
+    color: #595959;
+    display: none;
+}
+
+.accordion-text li.showAnswer p {
+    display: block;
+}
+
+@media (max-width: 994px) {
+    body {
+        padding: 40px 20px;
+    }
+
+    .accordion {
+        max-width: 100%;
+        padding: 45px 60px 45px 60px;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 220px;
+    }
+
+    .accordion .accordion-text {
+        width: 63%;
+    }
+}
+
+@media (max-width: 820px) {
+    .accordion {
+        flex-direction: column;
+    }
+
+    .accordion .image-box {
+        height: 360px;
+        width: 300px;
+        background: #f0c63c;
+        width: 100%;
+        border-radius: 25px;
+        padding: 30px;
+    }
+
+    .accordion .accordion-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 538px) {
+    .accordion {
+        padding: 25px;
+    }
+
+    .accordion-text li p {
+        width: 98%;
+    }
+}
+
+
+/* FAQ ends */
+
 
 
 /* DEVOPS PAGE ENDS*/
