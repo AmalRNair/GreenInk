@@ -710,10 +710,10 @@ li {}
     padding: 40px;
 }
 
-::selection {
+/* ::selection {
     background: #ddaf16fe;
     color: #fff;
-}
+} */
 
 .accordion {
     margin-top: 4rem;
