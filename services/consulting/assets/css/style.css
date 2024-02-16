@@ -425,6 +425,7 @@ h6 {
 #hero .btn-get-started:hover {
   background: #209d5b;
 }
+
 #hero .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
@@ -892,7 +893,7 @@ section {
   font-size: 14px;
 }
 
-.team .member .social {
+/* .team .member .social {
   margin-top: 12px;
   display: flex;
   align-items: center;
@@ -926,7 +927,23 @@ section {
 
 .team .member .social a+a {
   margin-left: 8px;
+} */
+.social .linkedin,
+.social .linkedin:focus {
+  padding: 6px 26px;
+  border-radius: 50px;
+  color: #000;
+  font-size: 13px;
+  border: 2px solid #195442;
+  font-weight: 600;
 }
+
+.social .linkedin:hover,
+.social .linkedin:focus:hover {
+  color: #fff;
+  background: #185e3b;
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1261,6 +1278,6 @@ section {
   }
 }
 
-#footer{
+#footer {
   margin-top: 0px;
 }
