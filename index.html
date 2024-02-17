@@ -39,92 +39,86 @@
   <!--FLOATING WHATSAPP-->
 
   <!-- navigationbar start-->
-  <header class="bg-header">
-    <nav class="navbar navbar-expand-lg  fixed-top">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">GreenInk</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
 
-        <!--sidebar-->
-        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel" style="width: 60%;">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="services/consulting/consulting.html">Consulting</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="about.html">About us</a>
-              </li>
-              <li class="nav-item px-2">
-                <select id="selectcourse" onchange="location=this.value">
-                  <option value="">Courses</option>
-                  <option value="/coursepages/devops.html">Devops</option>
-                  <option value="/coursepages/mern.html">Mern</option>
-                  <option value="/coursepages/foundation.html">Foundation</option>
-                  <option value="/coursepages/python-Django.html">Python-Django</option>
-                </select>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link cta px-4" href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more.">Contact</a>
-              </li>
+      <h1 class="logo me-auto"><a href="/index.html">Greenink</a></h1>
+      <!-- image logo section below -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/logo(bg-removed).png" alt="" class="img-fluid"></a> -->
 
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="/index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="/services/consulting/consulting.html">Consulting</a></li>
+          <li><a class="nav-link scrollto" href="/about.html">About us</a></li>
+          <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/coursepages/devops.html">DevOps</a></li>
+              <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+              <li><a href="/coursepages/mern.html">Mern Stack</a></li>
+              <li><a href="/coursepages/python-Django.html">Python-Django</a></li>
+              <li><a href="/coursepages/foundation.html">Foundation Course</a></li>
             </ul>
+          </li>
+          <li><a class="getstarted scrollto"
+              href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
+              target="_blank">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
+    </div>
+  </header><!-- End Header -->
+  <!--navigation bar ends-->
+
+  <!--home starts-->
+  <section id="hero-section" style="background-color: #f0c63c;;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 mt-4">
+          <h1 class="text-dark fw-bold" id="titleline">BUILDING YOU FOR THE DIGITAL AGE</h1>
+          <p class="text-dark pt-5 ">What if acquiring digital skills was more than just education? Imagine an
+            experience that not only teaches but transforms.<br>"Transforming minds, one byte at a time. Join us as
+            we
+            equip you for the digital era."
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
+            target="_blank">
+            <button class="btn">Whatsapp</button>
+          </a>
+          <a href="tel:+919747976278">
+            <button class="btn">Call:+919747976278</button>
+          </a>
+
+        </div>
+        <div class="col-12 col-lg-6" id="animation-container">
+          <div class="d-flex justify-content-end">
+            <script>
+              var animation = bodymovin.loadAnimation({
+                container: document.getElementById('animation-container'),
+                path: ' code1.json',
+                render: 'svg',
+                loop: true,
+                autoplay: true,
+                name: 'learning'
+              })
+            </script>
           </div>
         </div>
       </div>
-    </nav>
-    <!--navigation bar ends-->
+    </div>
+  </section>
+  <!--home ends-->
 
-    <!--home starts-->
-    <section id="hero-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 mt-4">
-            <h1 class="text-dark fw-bold" id="titleline">BUILDING YOU FOR THE DIGITAL AGE</h1>
-            <p class="text-dark pt-5 ">What if acquiring digital skills was more than just education? Imagine an
-              experience that not only teaches but transforms.<br>"Transforming minds, one byte at a time. Join us as we
-              equip you for the digital era."
-            </p>
-            <a href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
-              target="_blank">
-              <button class="btn">Whatsapp</button>
-            </a>
-            <a href="tel:+919747976278">
-              <button class="btn">Call:+919747976278</button>
-            </a>
-
-          </div>
-          <div class="col-12 col-lg-6" id="animation-container">
-            <div class="d-flex justify-content-end">
-              <script>
-                var animation = bodymovin.loadAnimation({
-                  container: document.getElementById('animation-container'),
-                  path: ' code1.json',
-                  render: 'svg',
-                  loop: true,
-                  autoplay: true,
-                  name: 'learning'
-                })
-              </script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--home ends-->
-  </header>
   <main>
     <section id="Our-Process">
       <div class="container">
@@ -239,7 +233,7 @@
     </section>
 
     <!--OUR-BOOTCAMP starts-->
-    <section id="bootcamp">
+    <!-- <section id="bootcamp">
       <div class="container">
         <h1 class=" display-3 text-center fw-bold mb-5" id="bootcamp">OUR<span class="text-success"> BOOTCAMP</span>
         </h1>
@@ -304,7 +298,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--OUR-BOOTCAMP starts-->
 
     <!--OUR-COURSES start-->
@@ -321,7 +315,7 @@
                 <p class="p-4" id="devopsp">Elevate your IT prowess with our DevOps training, merging development and
                   operations for seamless, efficient software delivery.</p>
                 <div class="info text-center">
-                  <a href="/coursepages//coursepages/devops.html" class="btn">Read more</a>
+                  <a href="/coursepages/devops.html" class="btn">Read more</a>
                 </div>
               </div>
             </div>
@@ -348,7 +342,7 @@
                 <p class="p-4">Master Python coding with our comprehensive training, unlocking limitless possibilities
                   in web development, data science, and automation.</p>
                 <div class="info text-center">
-                  <a href="/coursepages/devops.html" class="btn">Read more</a>
+                  <a href="/coursepages/python-Django.html" class="btn">Read more</a>
                 </div>
               </div>
             </div>
@@ -360,7 +354,7 @@
                 <p class="p-4" id="mernp"> MERN stack is a smart choice because it uses JavaScript across all layers,
                   simplifying the learning curve.</p>
                 <div class="info text-center">
-                  <a href="/coursepages/devops.html" class="btn">Read more</a>
+                  <a href="/coursepages/mern.html" class="btn">Read more</a>
                 </div>
               </div>
             </div>
@@ -434,10 +428,10 @@
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card text-center mb-4">
               <div class="card-body">
-                <img src="./assets/team-4.jpg" alt="" class="img-fluid rounded-circle">
-                <h3 class="card-title py-2">Jack Wilson</h3>
-                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
-                  tempora esse quibusdam.</p>
+                <img src="./assets/praveen.jpg" style="width: 50%;" alt="" class="img-fluid rounded-circle">
+                <h3 class="card-title py-2">Praveen G B</h3>
+                <p class="card-text">Chief Agilist at Clap Collaboration. 22+ years in engineering. Certified SAFe6 SPC
+                  & PGP in cloud/DevOps.Worked with MS, Oracle, Intel, BlueOptima, USAA, Aegis, Thomson Reuters.</p>
                 <p class="socials">
                   <i class="bi bi-twitter text-dark mx-1"></i>
                   <i class="bi bi-facebook text-dark mx-1"></i>
@@ -562,7 +556,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card swiper-slide">
+              <!-- <div class="card swiper-slide">
                 <div class="front">
                   <div class="image-content">
                     <span class="overlay"></span>
@@ -596,7 +590,7 @@
 
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -629,7 +623,8 @@
           <div class="row">
             <div class="col-12  col-lg-4 mb-4">
               <h3 class="fw-bold pb-3">Visit us</h3>
-              <p>location,<br>state,<br>country</p>
+              <p>Malabar Innovation Entrepreneurship Zone (MiZone),<br>Building# 446, Near Kannur University Campus -
+                Mangattuparamba,<br>Kannur, Kerala, India - 670567</p>
               <a href="mailto:info@greenink.com" class="text-dark">info@greenink.com</a>
             </div>
             <div class="col-12  col-lg-4 mb-4">
@@ -678,52 +673,6 @@
   <!-- SWIPER-JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <script>
-    var swiper = new Swiper(".slide-content", {
-      slidesPerView: 3,
-      spaceBetween: 25,
-      loop: true,
-      centerSlide: 'true',
-      fade: 'true',
-      grabCursor: 'true',
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        520: {
-          slidesPerView: 2,
-        },
-        950: {
-          slidesPerView: 3,
-        },
-      },
-    });
-  </script>
-
-  <!--NAVBAR TRANSPARENCY-->
-  <script>
-    const navEl = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= 40) {
-        navEl.classList.add('navbar-scrolled');
-      }
-      else if (window.scrollY < 40) {
-        navEl.classList.remove('navbar-scrolled');
-      }
-    });
-  </script>
-
 
   <!---BOOTSTRAP JS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -742,33 +691,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script>
-    $('.owl-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 25,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-          nav: true
-        },
-        600: {
-          items: 2,
-          nav: false
-        },
-        800: {
-          items: 3,
-          nav: false
-        },
-        1000: {
-          items: 4,
-          nav: false,
-          loop: true
-        }
-      }
-    })
-  </script>
+
+
+
+
+  <!-- Main JS File -->
+  <script src="/main.js"></script>
 </body>
 
 </html>

@@ -24,43 +24,45 @@
   <!--FLOATING WHATSAPP-->
 
   <!-- navigationbar -->
-  <header class="bg-header1">
-    <nav class="navbar navbar-expand-lg  bg-transparent ">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="/index.html">GreenInk</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!--sidebar-->
-        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel" style="width: 60%;">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item px-2">
-                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#Syllabus">Syllabus</a>
-              </li>
-              <li class="nav-item px-2">
-                <a class="nav-link" href="#faq">Faq</a>
-              </li>
-              <li class="nav-item px-3">
-                <a class="nav-link cta px-4" href="#callContact">Contact</a>
-              </li>
-
-            </ul>
-
-          </div>
-        </div>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top ">
+      <div class="container d-flex align-items-center">
+  
+        <h1 class="logo me-auto"><a href="/index.html">Greenink</a></h1>
+        <!-- image logo section below -->
+        <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto " href="/index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="/services/consulting/consulting.html">Consulting</a></li>
+            <li><a class="nav-link scrollto" href="/about.html">About us</a></li>
+            <li class="dropdown"><a href="#"><span>Courses</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="/coursepages/devops.html">DevOps</a></li>
+                <!-- <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                  <ul>
+                    <li><a href="#">Deep Drop Down 1</a></li>
+                    <li><a href="#">Deep Drop Down 2</a></li>
+                    <li><a href="#">Deep Drop Down 3</a></li>
+                    <li><a href="#">Deep Drop Down 4</a></li>
+                    <li><a href="#">Deep Drop Down 5</a></li>
+                  </ul>
+                </li> -->
+                <li><a href="/coursepages/mern.html">Mern Stack</a></li>
+                <li><a href="/coursepages/python-Django.html">Python-Django</a></li>
+                <li><a href="/coursepages/foundation.html">Foundation Course</a></li>
+              </ul>
+            </li>
+            <li><a class="getstarted scrollto"
+                href="https://api.whatsapp.com/send?phone=919747976278&text=*Hey GreenINK*,%0APlease share more details about your services. Interested to know more."
+                target="_blank">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+  
       </div>
-    </nav>
+    </header><!-- End Header -->
     <!--navigationbar ends-->
     <!-- course section -->
     <section id="course" class="course_wrapper">
@@ -98,7 +100,7 @@
 
     </section>
     <!-- course section exit -->
-  </header>
+
   <main>
     <!-- TUTOR section starts -->
     <!-- <section id="tutor">
@@ -308,7 +310,8 @@
           <div class="row">
             <div class="col-12  col-lg-4 mb-4">
               <h3 class="fw-bold pb-3 ">Visit us</h3>
-              <p>location,<br>state,<br>country</p>
+              <p>Malabar Innovation Entrepreneurship Zone (MiZone),<br>Building# 446, Near Kannur University Campus -
+                Mangattuparamba,<br>Kannur, Kerala, India - 670567</p>
               <a href="mailto:info@greenink.com" class="text-dark">info@greenink.com</a>
             </div>
             <div class="col-12  col-lg-4 mb-4">
@@ -350,21 +353,8 @@
 
 
 
-  <!-- FAQ script -->
-  <script>
-    let li = document.querySelectorAll(".faq-text li");
-    for (var i = 0; i < li.length; i++) {
-      li[i].addEventListener("click", (e) => {
-        let clickedLi;
-        if (e.target.classList.contains("question-arrow")) {
-          clickedLi = e.target.parentElement;
-        } else {
-          clickedLi = e.target.parentElement.parentElement;
-        }
-        clickedLi.classList.toggle("showAnswer");
-      });
-    }
-  </script>
+  <!-- Main JS File -->
+  <script src="/main.js"></script>
   <!-- FAQ end -->
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
