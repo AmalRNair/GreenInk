@@ -819,7 +819,7 @@ li {}
 
 @media (max-width: 994px) {
     body {
-        padding: 40px 20px;
+        padding: 0px 10px;
     }
 
     .accordion {
@@ -916,7 +916,22 @@ li {}
     .masthead {
         min-height: 30vh;
     }
-
+    .contact-section{
+        margin: 0px -10px;
+    }
+    #Syllabus{
+        margin: 0px -10px;
+    }
+    #about-us-page{
+        margin: 0px -10px;
+    }
+    #Advisors{
+        margin: 0px -10px;
+    }
+    .bg-header {
+        background-color: var(--nav-bgcolor);
+        margin: 0px -10px
+    }
     #about-us-title {
         font-size: calc(1.525rem + 3.3vw);
     }
@@ -936,7 +951,7 @@ li {}
 
 .about_wrapper {
     background-color: #f0c63c;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .card3 {
