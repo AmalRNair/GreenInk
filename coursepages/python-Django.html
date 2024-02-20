@@ -143,7 +143,7 @@
 
               </div>
             </h2>
-            <div id="collapsesy1" class="accordion-collapse collapse " aria-labelledby="syheading"
+            <div id="collapsesy1" class="accordion-collapse collapse show" aria-labelledby="syheading"
               data-bs-parent="#accordionExample">
               <div class="accordion-body1 mb-4">
                 <ul class="list-group ">
@@ -317,19 +317,17 @@
             <div class="col-12  col-lg-4 mb-4">
               <h3 class="fw-bold pb-3">Our Links</h3>
               <div class="d-flex flex-column">
-                <a href="index.html" class="text-dark">Home</a>
-                <a href="#Syllabus" class="text-dark">Syllabus</a>
-                <a href="#faq" class="text-dark">FAQ</a>
+                <a href="/index.html" class="text-dark">Home</a>
+                <a href="#Syllabus" class="text-dark scrollto">Syllabus</a>
+                <a href="#faq" class="text-dark scrollto">FAQ</a>
 
               </div>
             </div>
             <div class="col-12  col-lg-4">
               <h3 class="fw-bold pb-3 ">Connect us on</h3>
-              <img src="/assets/youtube.png" class="footerimg">
-              <a href="https://www.linkedin.com/company/greenink-pro/"><img src="/assets/linkedin.png"
-                  class="footerimg"></a>
-              <img src="/assets/instagram.png" class="footerimg">
-              <img src="/assets/facebook.png" class="footerimg">
+              <a href="https://www.youtube.com/@ClaygreenBuddy"><img src="/assets/youtube.png" class="footerimg"></a>
+              <a href="https://www.linkedin.com/company/greenink-pro/"><img src="/assets/linkedin.png" class="footerimg"></a>
+              <!-- <a href=""><img src="/assets/instagram.png" class="footerimg"></a> -->
             </div>
           </div>
         </div>
@@ -357,6 +355,22 @@
   <script src="/main.js"></script>
   
   <!-- FAQ end -->
+
+    <!-- faq SCRIPT -->
+    <script>
+      let li = document.querySelectorAll(".faq-text li");
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", (e)=>{
+          let clickedLi;
+          if(e.target.classList.contains("question-arrow")){
+            clickedLi = e.target.parentElement;
+          }else{
+            clickedLi = e.target.parentElement.parentElement;
+          }
+         clickedLi.classList.toggle("showAnswer");
+        });
+      }
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
