@@ -1252,13 +1252,12 @@ li {}
     background-color: #f0c63c;
     margin-top: 1rem;
 }
-.card3 {
+/* .card3 {
     width: 100%;
     height: 96%;
     transition: all 0.3s;
     background-color: #1d502ceb;
     color: #fff;
-    /* transition: transform 0.5s; */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     font-size: 1.5rem;
     border-radius: 63px 0px;
@@ -1273,10 +1272,10 @@ li {}
     width: 50%;
     margin-top: -2rem;
 
-}
+} */
 
 /* ADVISORS SECTION*/ 
-.advisors .advisors-team {
+/* .advisors .advisors-team {
     border-radius: 25px;
     background-color: #211f1f;
     height: 400px;
@@ -1305,10 +1304,10 @@ li {}
     top: 30%;
     left: 50%;
     position: absolute;
-}
+} */
 
-.advisors .advisors-team .name {
-    /* z-index: 2; */
+/* .advisors .advisors-team .name {
+    
     color: #fff;
     position: absolute;
     width: 100%;
@@ -1324,10 +1323,10 @@ li {}
     width: 100%;
     text-align: center;
     bottom: 94px;
-}
+} */
 
-.advisors .advisors-team .popup-btn {
-    /* z-index: 2; */
+/* .advisors .advisors-team .popup-btn {
+  
     color: #fff;
     bottom: 20px;
     left: 50%;
@@ -1423,7 +1422,7 @@ li {}
 .advisors .popup-card p {
     font-size: 15px;
     margin: 10px;
-}
+} */
 /* ADVISORS SECTION*/ 
 
 
@@ -1589,13 +1588,13 @@ li {}
 /*Responsive style*/
 
 @media (max-width: 900px) {
-    .team .advisors .popup-card {
+    .team .popup-card {
         flex-direction: column;
         width: 550px;
         height: auto;
     }
 
-    .team .advisors .popup-card .team-img {
+    .team .popup-card .team-img {
         z-index: 3;
         width: 100%;
         height: 200px;
@@ -1605,12 +1604,12 @@ li {}
         border-top-right-radius: 10px;
     }
 
-    .team .advisors .popup-card .team-img img {
+    .team .popup-card .team-img img {
         left: initial;
         max-width: 50%;
     }
 
-    .team .advisors .popup-card .info {
+    .team .popup-card .info {
         width: 100%;
         height: auto;
         padding: 20px;
@@ -1618,12 +1617,12 @@ li {}
         border-top-right-radius: 0;
     }
 
-    .team .advisors .popup-card .info h2 {
+    .team .popup-card .info h2 {
         margin: 20px 5px 5px 5px;
         font-size: 25px;
     }
 
-    .team .advisors .popup-card .info p {
+    .team .popup-card .info p {
         margin: 5px;
         font-size: 13px;
     }
