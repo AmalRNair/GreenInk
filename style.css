@@ -1174,6 +1174,7 @@ li {}
 
 
 /* ABOUT US PAGE */
+
 .navbar1 {
     background-color: rgba(240, 198, 60, .95);
     height: auto;
@@ -1208,6 +1209,34 @@ li {}
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
+/*--------------------------------------------------------------
+# TEAM
+--------------------------------------------------------------*/
+.team-members {
+    padding: 12px 0;
+    text-align: center;
+  }
+  
+  .team-members img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+  }
+  
+  .team-members img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .team-members img {
+      max-width: 40%;
+    }
+  }
+
+
 
 @media (max-width: 768px) {
     .masthead {
@@ -1252,187 +1281,10 @@ li {}
     background-color: #f0c63c;
     margin-top: 1rem;
 }
-/* .card3 {
-    width: 100%;
-    height: 96%;
-    transition: all 0.3s;
-    background-color: #1d502ceb;
-    color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    font-size: 1.5rem;
-    border-radius: 63px 0px;
-}
 
-.card3:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
-}
-.advisor-image{
-    width: 50%;
-    margin-top: -2rem;
-
-} */
-
-/* ADVISORS SECTION*/ 
-/* .advisors .advisors-team {
-    border-radius: 25px;
-    background-color: #211f1f;
-    height: 400px;
-    width: 96%;
-    max-width: 243px;
-    margin: 35px;
-    position: relative;
-    color: #fff;
-}
-
-.advisors .advisors-team:before {
-    content: '';
-    background: rgba(255, 255, 255, 0.1);
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-}
-
-.advisors .advisors-team .team-img {
-    max-width: 166px;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-    top: 30%;
-    left: 50%;
-    position: absolute;
-} */
-
-/* .advisors .advisors-team .name {
-    
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 152px;
-    font-size: 23px;
-    letter-spacing: 1px;
-}
-
-.advisors .advisors-team .desc {
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: 94px;
-} */
-
-/* .advisors .advisors-team .popup-btn {
-  
-    color: #fff;
-    bottom: 20px;
-    left: 50%;
-    position: absolute;
-    background: #555;
-    transform: translate(-50%);
-    font-size: 11px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 1px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.advisors .popup-view {
-    z-index: 2;
-    background: rgb(255, 255, 255, 0.70);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.advisors .popup-view.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.advisors .popup-card {
-    position: relative;
-    display: flex;
-    width: 800px;
-    height: 500px;
-    margin: 20px;
-}
-
-.advisors .popup-card .team-img {
-    z-index: 2;
-    background: #1D212B;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    height: 90%;
-    transform: translateY(25px);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-
-.advisors .popup-card .team-img img {
-    z-index: 2;
-    position: relative;
-    width: 177px;
-
-}
-
-.advisors .popup-card .info {
-    z-index: 2;
-    background: #fff;
-    display: flex;
-    width: 55%;
-    height: 100%;
-    box-sizing: border-box;
-    flex-direction: column;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-.advisors .popup-card .close-btn {
-    color: #555;
-    z-index: 4;
-    position: absolute;
-    right: 0;
-    font-size: 20px;
-    margin: 20px;
-    cursor: pointer;
-}
-
-.advisors .popup-card .info h2 {
-    font-size: 40px;
-    line-height: 20px;
-    margin: 10px;
-}
-
-.advisors .popup-card p {
-    font-size: 15px;
-    margin: 10px;
-} */
-/* ADVISORS SECTION*/ 
-
-
-
-/* ABOUT US PAGE */
 
 /*new team card */
-/* .team{
-    margin-left: -2.5rem;
-} */
+
 /* style for team card*/
 .team .team-card {
     border-radius: 25px;
@@ -1527,6 +1379,7 @@ li {}
     width: 800px;
     height: 500px;
     margin: 20px;
+    margin-top: 7rem;
 }
 
 .team .popup-card .team-img {
@@ -1583,14 +1436,15 @@ li {}
     margin: 10px;
 }
 
-#Advisors-readmore{
-    
-}
 
 
 /*Responsive style*/
 
 @media (max-width: 900px) {
+    .team{
+        display: flex;
+        justify-content: center;
+    }
     .team .popup-card {
         flex-direction: column;
         width: 550px;
@@ -1630,3 +1484,5 @@ li {}
         font-size: 13px;
     }
 }
+
+/* ABOUT US PAGE */
