@@ -517,7 +517,7 @@ nav {
 /* #affordable{
     margin-bottom: rem;
 } */
-/* #bootcamp1 img {
+#bootcamp1 img {
     width: 100%;
 }
 
@@ -537,7 +537,7 @@ nav {
     background-color: #5ecc7f;
     border-radius: 10px;
     padding: 1rem;
-} */
+}
 
 #courses {
     margin-bottom: 3rem;
@@ -1486,3 +1486,11 @@ li {}
 }
 
 /* ABOUT US PAGE */
+
+/*COURSE CATEGORY*/
+.course-category{
+    margin-top: 16rem;
+}
+
+
+/*COURSE CATEGORY*/
