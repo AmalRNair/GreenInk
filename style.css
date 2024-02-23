@@ -84,6 +84,7 @@ nav {
     /* backdrop-filter: blur(3px); */
     margin: 1rem auto;
     border-radius: 69px;
+    height: 100px;
 }
 
 #header.header-scrolled,
@@ -112,7 +113,8 @@ nav {
 }
 
 #header .logo img {
-    max-height: 40px;
+    max-height: 65px;
+    width: 11rem;
 }
 
 .navbar {
