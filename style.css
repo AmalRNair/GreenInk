@@ -84,7 +84,6 @@ nav {
     /* backdrop-filter: blur(3px); */
     margin: 1rem auto;
     border-radius: 69px;
-    height: 100px;
 }
 
 #header.header-scrolled,
@@ -1496,3 +1495,33 @@ li {}
 
 
 /*COURSE CATEGORY*/
+
+
+
+/* CAREERS PAGE*/
+.careers{
+    background-image: url('./assets/careers.jpg');
+    background-size: cover;
+    min-height: 60vh;
+    color: #fff;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.career-btn {
+    color: #fff;
+    background-color: var(--logo-color);
+    padding: 8px 24px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    margin: 10px;
+    margin-top: 21px;
+}
+
+.career-btn:hover {
+    background-color: var(--logo-color);
+    color: #fff;
+    transform: scale(1.15);
+
+}
+
+/*CAREERS PAGE*/
