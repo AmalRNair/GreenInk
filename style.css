@@ -157,7 +157,8 @@ nav {
     white-space: nowrap;
     transition: 0.3s;
 } */
-.navbar a, .navbar a:focus {
+.navbar a,
+.navbar a:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -639,9 +640,21 @@ nav {
     margin-bottom: 0;
     font-weight: 600;
     padding: 0.15rem;
-
 }
-
+.footer-strip{
+    background-color: rgb(255, 255, 255, 0.70);
+    /* height: 10%; */
+    position: relative;
+    bottom: 0;
+    width: 100%; 
+}
+.footer-strip p {
+    margin-top: 0;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding: 0.15rem;
+}
 h3 {
     font-size: 2.4rem;
 }
@@ -1234,32 +1247,33 @@ li {}
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 /*--------------------------------------------------------------
 # TEAM
 --------------------------------------------------------------*/
 .team-members {
     padding: 12px 0;
     text-align: center;
-  }
-  
-  .team-members img {
+}
+
+.team-members img {
     max-width: 45%;
     transition: all 0.4s ease-in-out;
     display: inline-block;
     padding: 15px 0;
     filter: grayscale(100);
-  }
-  
-  .team-members img:hover {
+}
+
+.team-members img:hover {
     filter: none;
     transform: scale(1.1);
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .team-members img {
-      max-width: 40%;
+        max-width: 40%;
     }
-  }
+}
 
 
 
@@ -1466,10 +1480,11 @@ li {}
 /*Responsive style*/
 
 @media (max-width: 900px) {
-    .team{
+    .team {
         display: flex;
         justify-content: center;
     }
+
     .team .popup-card {
         flex-direction: column;
         width: 550px;
@@ -1513,7 +1528,7 @@ li {}
 /* ABOUT US PAGE */
 
 /*COURSE CATEGORY*/
-.course-category{
+.course-category {
     margin-top: 16rem;
 }
 
@@ -1523,7 +1538,7 @@ li {}
 
 
 /* CAREERS PAGE*/
-.careers{
+.careers {
     background-image: url('./assets/career.jpg');
     background-size: cover;
     min-height: 60vh;
@@ -1531,6 +1546,7 @@ li {}
     position: relative;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
 /* .career-btn {
     color: #fff;
     background-color: var(--logo-color);
@@ -1548,14 +1564,88 @@ li {}
 
 } */
 
-.careers-card{
+.careers-card {
     height: 100%;
     width: 100%;
     color: #fff;
     background-color: #0e2547;
     border-radius: 25px;
 }
-.career-desc .card-body img{
+
+.career-desc .card-body img {
     width: 50%;
 }
+
 /*CAREERS PAGE*/
+
+
+/*EVENT PAGE*/
+
+.event-section {
+    padding: 10rem 0;
+}
+.item {
+    border: none;
+    margin-bottom: 30px;
+}
+
+.item .item-wrap {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.item .item-wrap:after {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+}
+.item .item-wrap img {
+    transition: 0.3s transform ease;
+    transform: scale(1);
+}
+.item .item-wrap>.work-info {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+    transform: translateY(-50%);
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 20px;
+    transition: 0.3s all ease;
+}
+.item .item-wrap>.work-info h3 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.item .item-wrap>.work-info span {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.item .item-wrap:hover {
+    text-decoration: none;
+}
+.item .item-wrap:hover img {
+    transform: scale(1.05);
+}
+.item .item-wrap:hover:after {
+    opacity: 1;
+    visibility: visible;
+}
+.item .item-wrap:hover .work-info {
+    margin-top: 0px;
+    opacity: 1;
+    visibility: visible;
+}
+/*EVENT PAGE*/
