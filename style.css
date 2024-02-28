@@ -622,7 +622,12 @@ nav {
 #contact {
     background-color: #fbd147fd;
 }
-
+.contact-section{
+    font-size: 1.5rem;
+}
+.footer-container{
+    margin-bottom: -2rem;
+}
 .contact-widget {
     list-style: none;
     display: table;
