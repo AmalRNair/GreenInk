@@ -398,25 +398,42 @@
               <form>
                 <div class="form-group">
                   <label for="Name">Name</label>
-                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                  <input type="text" class="form-control" id="nameInput" placeholder="Name">
                 </div>
                 <div class="form-group">
                   <label for="Email">Email</label>
-                  <input type="email" class="form-control" id="Email-1" placeholder="Email">
+                  <input type="email" class="form-control" id="emailInput" placeholder="Email">
                 </div>
                 <div class="form-group">
                   <label for="Message">Message</label>
-                  <textarea class="form-control" id="Message" placeholder="Enter your Message"></textarea>
+                  <textarea class="form-control" id="messageInput" placeholder="Enter your Message"></textarea>
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-success">Submit</button>
+              <button type="button" class="btn btn-success" onclick="sendWhatsAppMessage()">Submit</button>
             </div>
           </div>
         </div>
       </div>
+      <!--SCRIPT FOR SUBMIT-->
+      <script>
+        function sendWhatsAppMessage() {
+          var name = document.getElementById("nameInput").value;
+          var email = document.getElementById("emailInput").value;
+          var message = document.getElementById("messageInput").value;
+
+          if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
+            alert("Please fill in all the fields.");
+            return; 
+          }
+          var message = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
+          var whatsappUrl ="https://api.whatsapp.com/send?phone=919747976278&text=*Hey Greenink.pro*,%0AI'm interested to know more about your service.%0A%0A" + encodeURIComponent(message);
+          window.open(whatsappUrl);
+        }
+      </script>
+
     </div> 
   </div>
   <script src="vendors/jquery/jquery.min.js"></script>
