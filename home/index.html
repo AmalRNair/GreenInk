@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>greenink.pro</title>
   <meta charset="UTF-8">
@@ -10,59 +11,65 @@
   <link rel="stylesheet" href="../home/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="../home/vendors/aos/css/aos.css">
   <link rel="stylesheet" href="../home/css/style.css">
-  
+
 </head>
+
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
   <header id="header-section">
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar">
-    <div class="container">
-      <div class="navbar-brand-wrapper d-flex w-100">
-        <h1 class="logo me-auto" style="font-size: 25px;"><a href="">Greenink.pro</a></h1>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="mdi mdi-menu navbar-toggler-icon"></span>
-        </button> 
+      <div class="container">
+        <div class="navbar-brand-wrapper d-flex w-100">
+          <h1 class="logo me-auto" style="font-size: 25px;"><a href="">Greenink.pro</a></h1>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="mdi mdi-menu navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
+          <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
+            <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
+              <button class="navbar-toggler close-button" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../home/index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/consulting/consulting.html">Consulting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../services/coaching/coaching.html">Coaching</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../career.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../events.html">Events</a>
+            </li>
+
+            <li class="nav-item btn-contact-us pl-4 pl-lg-0">
+              <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse navbar-menu-wrapper" id="navbarSupportedContent">
-        <ul class="navbar-nav align-items-lg-center align-items-start ml-auto">
-          <li class="d-flex align-items-center justify-content-between pl-4 pl-lg-0">
-            <button class="navbar-toggler close-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="mdi mdi-close navbar-toggler-icon pl-5"></span>
-            </button>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../home/index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../services/consulting/consulting.html">Consulting</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../services/coaching/coaching.html">Coaching</a>  
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./products.html">Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../career.html">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../events.html">Events</a>
-          </li>
-          
-          <li class="nav-item btn-contact-us pl-4 pl-lg-0">
-            <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal">Contact Us</button>
-          </li>
-        </ul>
-      </div>
-    </div> 
-    </nav>   
+    </nav>
   </header>
-  <div class="banner" >
+  <div class="banner">
     <div class="container">
       <h1 class="font-weight-semibold">Crafting Quality <br>Community</h1>
       <h6 class="font-weight-normal text-muted pb-3"></h6>
       <div>
         <a class="btn btn-opacity-light mr-1 " href="#case-studies-section">Get started</a>
-        <button class="btn btn-opacity-success ml-1" href="#case-studies-section">Learn more</button>
+        <a class="btn btn-opacity-success ml-1 " href="#case-studies-section">Learn more</a>
+        <!-- <button class="btn btn-opacity-success ml-1" href="#case-studies-section"></button> -->
       </div>
       <img src="../home/images/Group171.svg" alt="" class="img-fluid">
     </div>
@@ -140,17 +147,18 @@
                 <div class="bg-primary text-center card-contents">
                   <div class="card-image">
                     <img src="../home/images/Group95.svg" class="case-studies-card-img" alt="">
-                  </div>  
+                  </div>
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
                       <h6 class="text-white pb-2 px-3">Know more about Our Consulting</h6>
-                      <button class="btn btn-white"><a href="../services/consulting/consulting.html">Read More</a></button>
+                      <button class="btn btn-white"><a href="../services/consulting/consulting.html">Read
+                          More</a></button>
                     </div>
                   </div>
-                </div>   
+                </div>
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Consulting</h6>
-                    <p>DevOps, DevSecOps</p>
+                  <h6 class="m-0 pb-1">Consulting</h6>
+                  <p>DevOps, DevSecOps</p>
                 </div>
               </div>
             </div>
@@ -160,18 +168,18 @@
               <div class="card-body p-0">
                 <div class="bg-warning text-center card-contents">
                   <div class="card-image">
-                      <img src="../home/images/Group108.svg" class="case-studies-card-img" alt="">
-                  </div>  
+                    <img src="../home/images/Group108.svg" class="case-studies-card-img" alt="">
+                  </div>
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
                       <h6 class="text-white pb-2 px-3">Know more about Coaching</h6>
                       <button class="btn btn-white"><a href="../services/coaching/coaching.html">Read More</a></button>
                     </div>
                   </div>
-                </div>   
+                </div>
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Coaching</h6>
-                    <p>FullStack, Devops, Security</p>
+                  <h6 class="m-0 pb-1">Coaching</h6>
+                  <p>FullStack, Devops, Security</p>
                 </div>
               </div>
             </div>
@@ -181,18 +189,18 @@
               <div class="card-body p-0">
                 <div class="bg-violet text-center card-contents">
                   <div class="card-image">
-                      <img src="../home/images/Group126.svg" class="case-studies-card-img" alt="">
-                  </div>  
+                    <img src="../home/images/Group126.svg" class="case-studies-card-img" alt="">
+                  </div>
                   <div class="card-desc-box d-flex align-items-center justify-content-around">
                     <div>
                       <h6 class="text-white pb-2 px-3">Know more about Greenink.pro Community</h6>
                       <button class="btn btn-white">Read More</button>
                     </div>
                   </div>
-                </div>   
+                </div>
                 <div class="card-details text-center pt-4">
-                    <h6 class="m-0 pb-1">Community</h6>
-                    <p></p>
+                  <h6 class="m-0 pb-1">Community</h6>
+                  <p></p>
                 </div>
               </div>
             </div>
@@ -219,7 +227,7 @@
             </div>
           </div> -->
         </div>
-      </section>     
+      </section>
       <!-- <section>
         <div class="contact-us-bgimage grid-margin" >
           <div class="pb-4">
@@ -234,50 +242,56 @@
       <section class="contact-details" id="contact-details-section">
         <div class="row text-center text-md-left">
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
-              <h1 class="logo me-auto" style="font-size: 25px;"><a href="">Greenink.pro</a></h1>
+            <h1 class="logo me-auto" style="font-size: 25px;"><a href="">Greenink.pro</a></h1>
             <div class="pt-2">
               <p class="text-muted m-0"> greeninkfounder@gmail.com</p>
               <p class="text-muted m-0"><strong>Phone:</strong> +919747976278<br></p>
-            </div>         
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
             <h5 class="pb-2">Quick Links</h5>
-            
-              <li><i class="bx bx-chevron-right"></i> <a href="../home/index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../services/coaching/aboutus.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../services/consulting/consulting.html">Consulting</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="../services/coaching/coaching.html">Coaching</a></li>
 
-              
-            
+            <a href="../home/index.html">Home</a><br>
+            <a href="../services/coaching/aboutus.html">About us</a><br>
+            <a href="../services/consulting/consulting.html">Consulting</a><br>
+            <a href="../services/coaching/coaching.html">Coaching</a>
+
+
+
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
             <h5 class="pb-2">Resources</h5>
-            <a href="#"><p class="m-0 pb-2">Terms & Conditions</p></a>   
-            <a href="#" ><p class="m-0 pt-1 pb-2">Privacy policy</p></a> 
+            <a href="#">
+              <p class="m-0 ">Terms & Conditions</p>
+            </a>
+            <a href="#">
+              <p class="m-0 pt-1 pb-2">Privacy policy</p>
+            </a>
             <!-- <a href="#"><p class="m-0 pt-1 pb-2">Cookie Policy</p></a> 
             <a href="#"><p class="m-0 pt-1">Discover</p></a>  -->
           </div>
           <div class="col-12 col-md-6 col-lg-3 grid-margin">
-              <h5 class="pb-2">Our address</h5>
-              <p class="text-muted">Malabar Innovation Entrepreneurship Zone;
-                MiZone, Building# 446, 
-                Kannur, Kerala, India - 670567<br>
-                Landmark: Near Kannur University Campus - Mangattuparamba</p>
-              <div class="d-flex justify-content-center justify-content-md-start">
-                <!-- <a href="#"><span class="mdi mdi-facebook"></span></a>
-                <a href="#"><span class="mdi mdi-twitter"></span></a>
-                <a href="#"><span class="mdi mdi-instagram"></span></a> -->
-                <a href="https://www.linkedin.com/company/greenink-pro/"><span class="mdi mdi-linkedin"></span></a>
-              </div>
+            <h5 class="pb-2">Our address</h5>
+            <p class="text-muted">Malabar Innovation Entrepreneurship Zone;
+              MiZone, Building# 446,
+              Kannur, Kerala, India - 670567<br>
+              Landmark: Near Kannur University Campus - Mangattuparamba</p>
+            <div class="d-flex justify-content-center justify-content-md-start">
+              <!-- <a href="#"><span class="mdi mdi-facebook"></span></a> -->
+              <!-- <a href="#"><span class="mdi mdi-twitter"></span></a> -->
+              <a href="https://www.youtube.com/@claygreenvlogs"><span class="mdi mdi-youtube"></span></a>
+              <a href="https://www.linkedin.com/company/greenink-pro/"><span class="mdi mdi-linkedin"></span></a>
+            </div>
           </div>
-        </div>  
+        </div>
       </section>
       <footer class="border-top">
-        <p class="text-center text-muted pt-4">Copyright © 2024<a href="greenink.pro" class="px-1">greenink.pro</a>All rights reserved.</p>
+        <p class="text-center text-muted pt-4">Copyright © 2024<a href="greenink.pro" class="px-1">greenink.pro</a>All
+          rights reserved.</p>
       </footer>
       <!-- Modal for Contact - us Button -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -315,15 +329,29 @@
 
           if (name.trim() === "" || email.trim() === "" || message.trim() === "") {
             alert("Please fill in all the fields.");
-            return; 
+            return;
           }
           var message = "Name: " + name + "\nEmail: " + email + "\nMessage: " + message;
-          var whatsappUrl ="https://api.whatsapp.com/send?phone=919747976278&text=*Hey Greenink.pro*,%0AI'm interested to know more about your service.%0A%0A" + encodeURIComponent(message);
+          var whatsappUrl = "https://api.whatsapp.com/send?phone=919747976278&text=*Hey Greenink.pro*,%0AI'm interested to know more about your service.%0A%0A" + encodeURIComponent(message);
           window.open(whatsappUrl);
         }
       </script>
 
-    </div> 
+      <!--Start of Tawk.to Script-->
+      <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+          var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+          s1.async = true;
+          s1.src = 'https://embed.tawk.to/657e008770c9f2407f80a464/1hhq3450d';
+          s1.charset = 'UTF-8';
+          s1.setAttribute('crossorigin', '*');
+          s0.parentNode.insertBefore(s1, s0);
+        })();
+      </script>
+      <!--End of Tawk.to Script-->
+
+    </div>
   </div>
   <script src="../home/vendors/jquery/jquery.min.js"></script>
   <script src="../home/vendors/bootstrap/bootstrap.min.js"></script>
@@ -331,4 +359,5 @@
   <script src="../home/vendors/aos/js/aos.js"></script>
   <script src="../home/js/landingpage.js"></script>
 </body>
+
 </html>
