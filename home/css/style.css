@@ -9712,7 +9712,15 @@ body.sidebar-open::before {
   margin-right: 10px;
   transition: all 0.6s ease-in-out;
 }
-
+.contact-details h1{
+  font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-family: 'Pacifico';
+}
 .contact-details .mdi:hover {
   background: #a6a6a6;
   color: white;
