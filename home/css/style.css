@@ -9562,7 +9562,7 @@ body.sidebar-open::before {
 }
 
 .banner {
-  background-color: #f7f8fa;
+  background-color: #80B6A9;
   text-align: center;
 }
 
@@ -9831,7 +9831,8 @@ footer a:hover {
     font-family: 'Pacifico';
 }
 .navbar {
-  background-color: #f7f8fa;
+  /* background-color: #f7f8fa; */
+  background-color: #80B6A9;
   padding: 49px 0px 63px 0px;
 }
 
@@ -9848,7 +9849,7 @@ footer a:hover {
 }
 
 .navbar .navbar-menu-wrapper .navbar-nav .btn-contact-us {
-  margin-left: 148px;
+  /* margin-left: 148px; */
   white-space: nowrap;
 }
 
