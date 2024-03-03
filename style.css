@@ -1350,7 +1350,9 @@ li {}
     position: relative;
     overflow: hidden;
 }
-
+.member-img img{
+    width: 70%;
+}
 .team .member .social {
     position: absolute;
     left: 76px;
