@@ -6,6 +6,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+
   <link rel="stylesheet" href="../home/vendors/owl-carousel/css/owl.carousel.min.css">
   <link rel="stylesheet" href="../home/vendors/owl-carousel/css/owl.theme.default.css">
   <link rel="stylesheet" href="../home/vendors/mdi/css/materialdesignicons.min.css">
@@ -18,7 +23,7 @@
   <header id="header-section">
     <nav class="navbar navbar-expand-lg pl-3 pl-sm-0" id="navbar" style="margin-left: -10px;">
       <div class="container">
-        <div class="navbar-brand-wrapper d-flex w-100">
+        <div class="navbar-brand-wrapper d-flex ">
           <h1 class="logo me-auto" style="font-size: 25px;"><a href="">Greenink.pro</a></h1>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,15 +43,13 @@
             <li class="nav-item">
               <a class="nav-link" href="../home/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../services/consulting/consulting.html">Consulting</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../services/coaching/coaching.html">Coaching</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../home/community.html">Community</a>
-            </li>
+            <li class="dropdown"><a ><span>Services </span><i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="../services/coaching/coaching.html">Coaching</a></li>
+                <li><a href="../services/consulting/consulting.html">Consulting</a></li>
+                <li><a href="./community.html">Community</a></li>
+              </ul>
+          </li>
             <li class="nav-item">
               <a class="nav-link" href="../home/products.html">Products</a>
             </li>
@@ -78,7 +81,7 @@
       <!-- <img src="./images/Group171.svg"> -->
       <svg class="animated" id="freepik_stories-group-discussion" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 750 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
-        xmlns:svgjs="http://svgjs.com/svgjs" style="    width: 65%;
+        xmlns:svgjs="http://svgjs.com/svgjs" style="    
         background-color: #80B6A9;
         margin-top: 1rem;">
         <style>
