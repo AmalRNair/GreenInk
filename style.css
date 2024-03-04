@@ -272,7 +272,7 @@ nav {
   * Mobile Navigation 
   */
 .mobile-nav-toggle {
-    color: #fff;
+    color: #000;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -1823,6 +1823,34 @@ li {}
 } 
 
 
-
-
 /* community page */
+
+
+
+/* Product page */
+
+.product-body{
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    background-color: #5ecc7f;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.product-body img{
+    width: 65%;
+}
+
+
+/* Product page */
+
+
+/* Privacy Page */
+
+.bg-privacy{
+    background-color: #e0e1e36b;
+    padding: 6rem;
+}
+
+
+/* Privacy Page */
