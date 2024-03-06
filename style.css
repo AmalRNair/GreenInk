@@ -85,6 +85,9 @@ nav {
     margin: 1rem auto;
     border-radius: 69px;
 }
+#header a{
+    text-decoration: none;
+}
 
 #header.header-scrolled,
 #header.header-inner-pages {
