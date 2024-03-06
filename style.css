@@ -1842,11 +1842,22 @@ li {}
     padding: 2rem;
     width: 100%;
 }
+#iiic2{
+    height: 125%;
+}
 @media (min-width: 1200px){
     .event-img img{
         width: 63%;
+    } 
+    #iiic2{
+        margin-top: -13rem;
     }
     
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #iiic2{
+        margin-top: -17rem;
+    }
 }
 /* GCEK EVENT PAGE */
 
