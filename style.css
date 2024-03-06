@@ -92,7 +92,7 @@ nav {
     /* transform: translate(0px, 0px); */
     opacity: 1;
     margin: 1rem;
-    pointer-events: all;
+    pointer-gallery: all;
     color: #000;
 
 
@@ -1232,7 +1232,15 @@ li {}
     }
 }
 
+#contact-row{
+    padding: 0px 60px;
+}
 
+@media (max-width: 500px){
+    #contact-row{
+        padding: 0px 5px;
+    }
+}
 /* FAQ ends */
 
 
@@ -1722,6 +1730,26 @@ li {}
     width: 50%;
 }
 
+.apply-btn {
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.apply-btn .apply-here,
+.apply-btn .apply-here:focus {
+    padding: 6px 26px;
+    border-radius: 50px;
+    color: #0d6dfcff;
+    font-size: 15px;
+    border: 2px solid #0d6dfcff;
+    font-weight: 600;
+}
+
+.apply-btn .apply-here:hover,
+.apply-btn .apply-here:focus:hover {
+    color: #fff;
+    background: #0d6dfcff;
+}
 /*CAREERS PAGE*/
 
 
@@ -1809,20 +1837,56 @@ li {}
 /*EVENT PAGE*/
 
 
+/* GCEK EVENT PAGE */
+.event-img img{
+    padding: 2rem;
+    width: 100%;
+}
+@media (min-width: 1200px){
+    .event-img img{
+        width: 63%;
+    }
+    
+}
+/* GCEK EVENT PAGE */
+
+
+
 /* community page */
 
+.community {
+    height: 97%;
+    width: 99%;
+}
 .community-body {
     height: 100%;
     width: 100%;
     color: #fff;
     background-color: #30596e;
     border-radius: 10px;
-    padding: 1rem;
 }
 .community-body img{
     width: 65%;
 } 
-
+#community-container{
+    padding: 0rem 12rem 0rem 12rem;
+}
+@media (max-width: 1200px){
+    .community-body h1{
+        font-size: 1.17em;
+    }
+}
+@media (max-width: 576px){
+    #community-container{
+        padding: 0px 0px 0px 0px;
+    }
+    .community{
+        padding-left: 4px;
+    }
+}
+/* .content-wrapper {
+    padding: 27px 0px;
+} */
 
 /* community page */
 
