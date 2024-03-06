@@ -1,5 +1,4 @@
-/**************Animation File Start Here (animate.css)****************/
-/**************Copy and Save this in another file (animate.css)****************/
+
 
 /* Animation Delay */
 .d01{ animation-delay:0.1s; -moz-animation-delay:0.1s; -webkit-animation-delay:0.1s; }
@@ -1640,7 +1639,7 @@
   position: absolute;
   content: " ";
   width: 2px;
-  background-color: #4997cd;
+  background-color: #198754;
   left: 50%;
   margin-left: -1.5px;
 }
@@ -1661,7 +1660,7 @@
 	background-color: #fff;
 	z-index: 6;
 	border-radius: 50%;
-	border: 2px solid #4997cd;
+	border: 2px solid #198754;
 }
 #timeline .timeline-badge span.timeline-balloon-date-day {
   font-size: 1.4em;
@@ -1680,7 +1679,7 @@
   top: 40px;
 }
 #timeline .timeline-badge.timeline-filter-movement a span {
-  color: #4997cd;
+  color: #198754;
   font-size: 1.3em;
   top: -1px;
 }
@@ -1691,22 +1690,22 @@
 	font-size: 1.7em;
 	top: -16px;
 	margin-left: -60px;
-	border: 2px solid #4997cd;
+	border: 2px solid #198754;
 }
 #timeline .timeline-badge.timeline-future-movement p {
-	color:#1782cc;
+	color:#198754;
 	position: absolute;
 	top: 40px;
 	left: 24px;
 }
 #timeline .timeline-badge.timeline-future-movement a span {
-  color: #4997cd;
+  color: #198754;
   font-size: .9em;
   top: 0;
   left: 1px;
 }
 #timeline .timeline-movement {
-/*   border-bottom: dashed 1px #4997cd; */
+/*   border-bottom: dashed 1px #198754; */
   position: relative;
   margin-bottom: 10rem;
 }

@@ -32,14 +32,14 @@ $(document).ready(function(){
     /**********************Change color of center aligned animated content small Circle  "START"************************************/
     $(document).ready(function(){
         $(" .debits").hover(function(){
-            $(" .center-right").css("background-color", "#4997cd");
+            $(" .center-right").css("background-color", "#198754");
             }, function(){
             $(" .center-right").css("background-color", "#fff");
         }); 
     });
     $(document).ready(function(){
         $(".credits").hover(function(){
-            $(".center-left").css("background-color", "#4997cd");
+            $(".center-left").css("background-color", "#198754");
             }, function(){
             $(".center-left").css("background-color", "#fff");
         }); 
