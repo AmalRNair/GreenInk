@@ -1879,8 +1879,29 @@ li {}
     background-color: #30596e;
     border-radius: 10px;
 }
+.btn-info{
+    margin-bottom: 2rem;
+}
+.community-btn {
+    color: #fff;
+    background-color: #30637d;
+    padding: 8px 24px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    margin: 4px;
+    /* margin-top: 21px; */
+    margin-bottom: 1rem;
+}
+
+.community-btn:hover {
+    background-color: #2190c8;
+    color: #fff;
+    transform: scale(1.15);
+
+}
+
 .community-body img{
-    width: 65%;
+    width: 54%;
 } 
 #community-container{
     padding: 0rem 12rem 0rem 12rem;
