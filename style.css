@@ -1865,6 +1865,27 @@ li {}
 /* GCEK EVENT PAGE */
 
 
+/* Greenink Launch */
+
+
+@media  (min-width: 1400px){
+    #launch5 img{
+        margin-top: -24rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1399px){
+    #launch5 img{
+        margin-top: -17rem;
+    }
+}
+@media (max-width: 991px){
+    #launch5 img{
+        margin-top: 0rem;
+    }
+}
+/*GREENINK LAUNCH*/
+
+
 
 /* community page */
 
