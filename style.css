@@ -1899,12 +1899,35 @@ li {}
     transform: scale(1.15);
 
 }
-
+.habitsstrong-body{
+    height: 100%;
+    width: 100%;
+    color: #000000;
+    background-color: #5ecc7f;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.habitsstrong-body img{
+    width: 70%;
+}
+#connectedstudents img{
+    width: 50%;
+}
 .community-body img{
     width: 54%;
 } 
 #community-container{
     padding: 0rem 12rem 0rem 12rem;
+}
+@media(max-width: 1399px){
+    #connectedstudents img{
+        width: 60%;
+    }
+}
+@media(max-width: 1199px){
+    #connectedstudents img{
+        width: 81%;
+    }
 }
 @media (max-width: 1200px){
     .community-body h1{
